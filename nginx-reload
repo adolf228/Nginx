@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function reload {
+	sudo service nginx restart
+}
+
+if reload
+then
+	echo 'Nginx был успешно перезагружен!'
+else
+	echo 'Ошибка при перезагрузке Nginx!'
+fi
